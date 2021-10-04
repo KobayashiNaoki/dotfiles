@@ -10,10 +10,7 @@
     undo-tree
     jedi
     py-autopep8
-    flymake
-    flymake-cursor
-    flymake-easy
-    flymake-python-pyflakes
+    flycheck
     highlight-symbol
     markdown-mode
     ))

@@ -35,12 +35,8 @@
 (blink-cursor-mode 0)
 
 ;; 対応する括弧を光らせる
-(show-paren-mode 1)
-
-;; ウィンドウ内に収まらないときだけ、カッコ内も光らせる
-(setq show-paren-style 'mixed)
-(set-face-background 'show-paren-match-face "grey")
-(set-face-foreground 'show-paren-match-face "black")
+(setq show-paren-delay 0)
+(show-paren-mode t)
 
 ;; スクロールは１行ごとに
 (setq scroll-conservatively 1)
