@@ -1,0 +1,31 @@
+# Read profile
+shell -$SHELL
+
+# Encoding
+defencoding utf-8
+
+# Prefix key
+escape ^Zz
+
+# Set scrollback
+defscrollback 10000
+
+# Delete start up screen
+startup_message off
+
+# Auto detach
+autodetach on
+
+# Hardstatus
+# hardstatus alwayslastline '%{= wk}%A %{= wk}%02C:%02s %{= wk}%H | %-Lw%{= BW}%50>%n%f* %t%{-}%+Lw%<'
+hardstatus alwayslastline '%{= Wd}%A %{= Wd}%02C:%02s %{= Wd}%H | %-Lw%{= cW}%50>%n%f* %t%{-}%+Lw%< %= LoadAVG [%l]'
+
+# Redraw before using editor
+altscreen on
+
+# Visual bell off
+vbell off
+
+# color
+defbce on
+term xterm-256color

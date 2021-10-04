@@ -1,0 +1,6 @@
+(require 'highlight-symbol)
+;;(global-set-key [(control f4)] 'highlight-symbol-at-point)
+(global-set-key (kbd "C-h C-c") 'highlight-symbol-at-point)
+(global-set-key (kbd "C-h C-s") 'highlight-symbol-next)
+(global-set-key (kbd "C-h C-r") 'highlight-symbol-prev)
+(global-set-key [(meta f3)] 'highlight-symbol-query-replace)
