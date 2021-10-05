@@ -1,3 +1,6 @@
+;; 26.3でmelpaに接続できないん問題のため
+(setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
+
 ;; ~/.emacs.d/site-lisp 以下全部読み込み
 (let ((default-directory (expand-file-name "~/.emacs.d/site-lisp")))
   (add-to-list 'load-path default-directory)
@@ -17,3 +20,4 @@
 (require 'init-loader)
 (setq init-loader-show-log-after-init 'error-only)
 (init-loader-load "~/.emacs.d/inits")
+
