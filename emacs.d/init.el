@@ -1,4 +1,4 @@
-;; 26.3でmelpaに接続できないん問題のため
+;; 26.3でmelpaに接続できない問題のため
 (setq gnutls-algorithm-priority "NORMAL:-VERS-TLS1.3")
 
 ;; ~/.emacs.d/site-lisp 以下全部読み込み
